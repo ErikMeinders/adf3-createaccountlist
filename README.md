@@ -23,10 +23,11 @@ Change this to the name of the role the tool should assume in your child account
 `
 
 You can indicate that you want only the CREATED (as opposed to INVITED) accounts.
-Created account will have an OrganizationAccountAccessRole (or whatever name your organization uses)
-Invited accounts might lack that Role as they were created outside of your organization and thus no have a standard Role name
+Created account will have an OrganizationAccountAccessRole (or whatever name your organization uses).
+Invited accounts might lack that Role as they were created outside of your organization and thus no have a standard Role name.
 Therefor this tool might not be able to assume it.
 
 # WARNING
 
-Check the output before you commit it to master. If everything is correct, ADF will recognize your accounts and not make any changes.
+Check the output before you commit it to master. If everything is correct, ADF will recognize the accounts in the file 
+as existing accounts and not make any changes.
