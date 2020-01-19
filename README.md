@@ -5,6 +5,7 @@ Create list of your existing AWS accounts in ADF 3 account.yml format.
 Tool to create an account.yml list for all your current account.
 
 Run this in your Organization Master account in your checked-out aws-deployment-framework-bootstrap repo.
+This is best done in a Cloud9 environment in your master account.
 
 `
 adf3-createaccountlist > adf-accounts/preADF3existingaccounts.yml
@@ -29,5 +30,15 @@ Therefor this tool might not be able to assume it.
 
 # WARNING
 
+The current version has hardcoded tags and REPLACES them.
+
 Check the output before you commit it to master. If everything is correct, ADF will recognize the accounts in the file 
 as existing accounts and not make any changes.
+
+# PREREQUISITES
+
+This program is written in python and requires boto3. When running in Cloud9, this is already available.
+
+# TODO
+
+Fix the tags
